@@ -15,7 +15,9 @@ export const AccordionFAQ = ({ question, answer }: Props) => {
     <Accordion type='single' collapsible>
       <AccordionItem value='item-1'>
         <AccordionTrigger>{question}</AccordionTrigger>
-        <AccordionContent>{answer}</AccordionContent>
+        <AccordionContent className='text-muted-foregrounds'>
+          {answer}
+        </AccordionContent>
       </AccordionItem>
     </Accordion>
   );

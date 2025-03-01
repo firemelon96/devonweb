@@ -5,12 +5,12 @@ import Image from 'next/image';
 
 export const Header = () => {
   return (
-    <header className='bg-gradient-to-tr from-blue-500 to-fuchsia-500 h-16 sticky top-0 z-[99999]'>
+    <header className='bg-gradient-to-tr from-blue-500 to-fuchsia-500 h-16 sticky top-0 z-50 px-4'>
       <div className='max-w-screen-xl mx-auto'>
         <div className='flex items-center justify-between'>
-          <div className='flex items-center gap-2'>
+          <div className='flex h-16 items-center gap-2'>
             <Image src='/logo.png' height={30} width={30} alt='logo' />
-            <h3 className='text-xl text-white font-semibold'>
+            <h3 className='text-base text-white font-semibold'>
               Devon web solutions
             </h3>
             <Navigation />

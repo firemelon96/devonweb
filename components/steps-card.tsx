@@ -30,6 +30,7 @@ export const StepsCard = ({ title, description, requirements }: Props) => {
       <CardContent className='space-y-2'>
         {requirements.map((req) => (
           <AlertItem
+            key={req.title}
             title={req.title}
             description={req.description}
             icon={req.icon}

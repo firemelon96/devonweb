@@ -31,7 +31,10 @@ const projects = [
 
 export const Projects = () => {
   return (
-    <div className='max-w-screen-xl mx-auto scroll-mt-28' id='projects'>
+    <div
+      className='max-w-screen-xl mx-auto scroll-mt-28 px-4 lg:px-0'
+      id='projects'
+    >
       <div className='flex flex-col gap-2 mb-24'>
         <Heading
           title='Projects'
@@ -41,7 +44,7 @@ export const Projects = () => {
         <Carousel>
           <CarouselContent>
             {projects.map((project, i) => (
-              <CarouselItem key={i} className='basis-1/3'>
+              <CarouselItem key={i} className='lg:basis-1/3 md:basis-1/2'>
                 <ProjectCard
                   name={project.name}
                   description={project.description}

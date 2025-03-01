@@ -92,7 +92,7 @@ export const Steps = () => {
           subTitle="Simply by knowing your brand does and features, we'll get you
         started!"
         />
-        <div className='grid grid-cols-3 gap-4 bg-gradient-to-b from-blue-500 to-fuchsia-500 bg-muted-foreground p-4 rounded-md'>
+        <div className='grid lg:grid-cols-3 grid-cols-1 gap-4 bg-gradient-to-b from-blue-500 to-fuchsia-500 bg-muted-foreground p-4 rounded-md'>
           {steps.map((step) => (
             <StepsCard
               title={step.title}

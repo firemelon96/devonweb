@@ -1,3 +1,4 @@
+import { ContactForm } from './contact-form';
 import { Heading } from './heading';
 import { Button } from './ui/button';
 import { Input } from './ui/input';
@@ -13,7 +14,7 @@ export const Contact = () => {
         />
 
         <div className='p-4 bg-gradient-to-tr from-blue-500 to-fuchsia-500 flex rounded-md'>
-          <form className='flex flex-col w-full gap-2'>
+          {/* <form className='flex flex-col w-full gap-2'>
             <div className='flex gap-2'>
               <div className='flex flex-col gap-2 w-1/2'>
                 <Input type='text' placeholder='Your name' />
@@ -23,7 +24,8 @@ export const Contact = () => {
             </div>
 
             <Button type='submit'>Send</Button>
-          </form>
+          </form> */}
+          <ContactForm />
         </div>
       </div>
     </div>
